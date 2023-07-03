@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "JSResultDemo";
+}
+
+<h2>JSResultDemo</h2>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<div class="jumbotron">
+    <h2 style="color:chocolate">Javascript Result Demo</h2>
+</div>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $.getScript("/Result/WarningMessage");
+        });
+    });
+</script>
+<button>Show Message</button>

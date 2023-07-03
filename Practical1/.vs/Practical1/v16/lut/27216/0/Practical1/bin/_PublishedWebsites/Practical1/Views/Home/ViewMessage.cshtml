@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewMessage</title>
+</head>
+<body>
+    <div id="parent">
+        <p>
+            <label id="lbl1" ></label>
+        </p>
+        
+        <button id="PrintMsgBtn">PRINT TEXT</button>
+        <button id="boldBtn">BOLD</button>
+        <button id="italicBtn">ITALIC</button>
+        <button id="underlineBtn">UNDERLINE</button>
+        <button id="resetMessage">RESET</button>
+    </div>
+</body>
+</html>
+
+<script>
+    var label = document.getElementById("lbl1");
+
+    document.getElementById("PrintMsgBtn").addEventListener("click", function () {
+        label.innerHTML = "Hello World";
+    }, true);
+
+    document.getElementById("boldBtn").addEventListener("click", function () {
+        label.style.fontWeight = "bold";
+    }, false);
+
+    document.getElementById("italicBtn").addEventListener("click", function () {
+        label.style.fontStyle = "Italic";
+    }, false);
+
+    document.getElementById("underlineBtn").addEventListener("click", function () {
+        label.style.textDecorationLine = "Underline";
+    }, false);
+
+    document.getElementById("resetMessage").addEventListener("click", function () {
+        label.style = "";
+    }, false);
+</script>

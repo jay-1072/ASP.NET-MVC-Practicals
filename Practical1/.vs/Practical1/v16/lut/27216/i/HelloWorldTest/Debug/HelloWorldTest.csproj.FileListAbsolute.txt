@@ -1,0 +1,8 @@
+C:\Users\jay\Documents\MVC Practicals\Practical1\.vs\Practical1\v16\lut\0\b\HelloWorldTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jay\Documents\MVC Practicals\Practical1\.vs\Practical1\v16\lut\0\b\HelloWorldTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jay\Documents\MVC Practicals\Practical1\.vs\Practical1\v16\lut\0\b\HelloWorldTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jay\Documents\MVC Practicals\Practical1\.vs\Practical1\v16\lut\0\b\HelloWorldTest\bin\Debug\HelloWorldTest.dll.config
+C:\Users\jay\Documents\MVC Practicals\Practical1\.vs\Practical1\v16\lut\0\b\HelloWorldTest\bin\Debug\HelloWorldTest.dll
+C:\Users\jay\Documents\MVC Practicals\Practical1\.vs\Practical1\v16\lut\0\i\HelloWorldTest\Debug\HelloWorldTest.csproj.CoreCompileInputs.cache
+C:\Users\jay\Documents\MVC Practicals\Practical1\.vs\Practical1\v16\lut\0\i\HelloWorldTest\Debug\HelloWorldTest.csproj.CopyComplete
+C:\Users\jay\Documents\MVC Practicals\Practical1\.vs\Practical1\v16\lut\0\i\HelloWorldTest\Debug\HelloWorldTest.dll

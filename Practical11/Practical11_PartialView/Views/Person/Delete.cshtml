@@ -1,0 +1,13 @@
+﻿@model Practical11_PartialView.Models.Person
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<div>
+    <h4>Person</h4>
+    <hr />
+    @Html.Partial("_Delete", Model)
+</div>

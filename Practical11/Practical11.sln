@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32930.78
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical11", "Practical11\Practical11.csproj", "{EE1476D8-0155-4B8B-A288-EE4474DE5945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical11_PartialView", "Practical11_PartialView\Practical11_PartialView.csproj", "{ED0B3F32-A836-4CDA-989A-3B0A22ADDAEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE1476D8-0155-4B8B-A288-EE4474DE5945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE1476D8-0155-4B8B-A288-EE4474DE5945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE1476D8-0155-4B8B-A288-EE4474DE5945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE1476D8-0155-4B8B-A288-EE4474DE5945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0B3F32-A836-4CDA-989A-3B0A22ADDAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0B3F32-A836-4CDA-989A-3B0A22ADDAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0B3F32-A836-4CDA-989A-3B0A22ADDAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0B3F32-A836-4CDA-989A-3B0A22ADDAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F55B65DB-206E-4B56-A189-E9531DA6B61D}
+	EndGlobalSection
+EndGlobal

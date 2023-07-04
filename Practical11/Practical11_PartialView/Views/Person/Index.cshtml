@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Practical11_PartialView.Models.Person>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("_Index", Model)

@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Practical12_Test3.Models.EmployeeModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="btn-group">
+    @Html.ActionLink("EmployeeWithDesignation", "EmployeeWithDesignation", "Employee", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("DesignationHavingMoreThan1Employee", "DesignationHavingMoreThan1Employee", "Employee", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("NumberOfRecordsByDesignationName", "NumberOfRecordsByDesignationName", "Employee", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("EmployeeHavingMaximumSalary", "EmployeeWithMaxSalary", "Employee", null, new { @class = "btn btn-primary" })
+</div>
+
+<div class="btn-group" style="margin-top: 10px">
+    @Html.ActionLink("CreateProcedureToAddEmployee", "CreateStoreProcedureToAddEmployee", "Employee", null, new { @class = "btn btn-primary" }) 
+    @Html.ActionLink("CreateProcedureToGetEmployeesOrderByDOB", "CreateStoreProcedureToGetEmployeesOrderByDOB", "Employee", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("CreateProcedureToGetEmployeesOrderByFirstName", "CreateStoreProcedureToGetEmployeesOrderByFirstname", "Employee", null, new { @class = "btn btn-primary" })
+</div>
+
+<div class="btn-group" style="margin-top: 10px">
+    @Html.ActionLink("CreateViewToGetEmployee", "CreateViewToGetEmployees", "Employee", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("CreateNonClusterdIndexOnDepartmentIdForEmployee", "CreateNonClusteredIndex", "Employee", null, new { @class = "btn btn-primary" })
+</div>
+
+<table class="table table-striped" style="margin-top: 10px">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MobileNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salary)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MiddleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MobileNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salary)
+            </td>
+        </tr>
+    }
+
+</table>
+
+<h4>
+    @TempData["Success"]
+
+    @{ var temp = DateTime.Now.Second; }
+
+    @if (DateTime.Now.Second == temp + 10)
+    {
+        @TempData.Remove("Success");
+    }
+</h4>

@@ -1,0 +1,33 @@
+﻿@model PagedList.IPagedList<Practical14.Models.Employee>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+<p>
+    Find by name: @Html.TextBox("name", TempData["CurrentFilter"], new { id = "txtSearch" })
+    <input type="button" value="Search" id="btnSearch" />
+</p>
+
+<div id="tbl">
+    @Html.Partial("_IndexPartialView", Model)
+</div>
+
+@{TempData.Keep("CurrentFilter");}
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#btnSearch").on("click", function () {
+            var searchString = $("#txtSearch").val();
+            $("#tbl").load('@Url.Action("Index", "Employee")', { "searchString": searchString, "partialViewName": "_IndexPartialView" });
+        });
+    });
+</script>

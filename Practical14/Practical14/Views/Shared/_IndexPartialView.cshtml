@@ -1,0 +1,42 @@
+﻿﻿@model  PagedList.IPagedList<Practical14.Models.Employee>
+@using PagedList.Mvc;
+
+<table class="table">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Date Of Birth
+        </th>
+        <th>
+            Age
+        <th>
+    </tr>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Convert.ToDateTime(item.DOB).ToString("yyyy/MM/dd")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@{TempData.Keep("CurrentFilter");}
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { searchString = TempData["CurrentFilter"], page }))

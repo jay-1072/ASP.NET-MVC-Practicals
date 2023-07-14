@@ -1,0 +1,66 @@
+﻿@model FormAuthentication.Models.StudentModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal"  style="font-size: 17px">
+        <dt>
+            @Html.DisplayNameFor(model => model.EnrollmentNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnrollmentNumber)
+        </dd>
+
+        <dt style="margin-top: 3px">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd style="margin-top: 3px">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt style="margin-top: 3px">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd style="margin-top: 3px">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt style="margin-top: 3px">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd style="margin-top: 3px">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt style="margin-top: 3px">
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd style="margin-top: 3px">
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt style="margin-top: 3px">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd style="margin-top: 3px">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+</p>
